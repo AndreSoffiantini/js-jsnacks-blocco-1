@@ -6,18 +6,33 @@ Il software stampa prima la parola più corta, poi la parola più lunga.
 const firstWord = prompt("Inserisci la prima parola");
 const secondWord = prompt("Inserisci la seconda parola");
 
-if (firstWord.length > secondWord.length) {
+if (firstWord != null && firstWord.length != 0) {
 
-    console.log(`${secondWord}`);
-    console.log(`${firstWord}`);
+    if (secondWord != null && secondWord.length != 0) {
 
-} else if (secondWord.length > firstWord.length) {
+        if (firstWord.length > secondWord.length) {
 
-    console.log(`${firstWord}`);
-    console.log(`${secondWord}`);
+            console.log(`${secondWord}`);
+            console.log(`${firstWord}`);
 
+        } else if (secondWord.length > firstWord.length) {
+
+            console.log(`${firstWord}`);
+            console.log(`${secondWord}`);
+
+        } else {
+
+            console.log("Le parole sono uguali");
+
+        }
+
+    } else {
+
+        alert("Inserisci la seconda parola");
+
+    }
 } else {
 
-    console.log("Le parole sono uguali");
+    alert("Inserisci la prima parola");
 
 }
