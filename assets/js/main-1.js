@@ -1,5 +1,5 @@
-const firstNumber = prompt("Inserisci il primo numero");
-const secondNumber = prompt("Inserisci il secondo numero");
+const firstNumber = parseInt(prompt("Inserisci il primo numero"));
+const secondNumber = parseInt(prompt("Inserisci il secondo numero"));
 
 if (firstNumber > secondNumber) {
 
