@@ -24,10 +24,12 @@ for (let i = 0; i < guestsList.length; i++) {
 
 if (check) {
 
-    invitationResult.innerHTML = "Benvenuto Sir, è invitato alla festa!"
+    invitationResult.innerHTML = "Benvenuto Sir, è invitato alla festa!";
+    invitationResult.style.color = "forestgreen";
 
 } else {
 
-    invitationResult.innerHTML = "Vattene plebeo, non sei invitato alla festa!"
+    invitationResult.innerHTML = "Vattene plebeo, non sei invitato alla festa!";
+    invitationResult.style.color = "crimson";
 
 }
